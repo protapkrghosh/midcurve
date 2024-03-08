@@ -1,3 +1,4 @@
+import Container from '@/components/Sections/Container/Container';
 import Footer from '@/shared/Footer/Footer';
 import NavBar from '@/shared/NavBar/NavBar';
 import React from 'react';
@@ -7,8 +8,10 @@ const Main = () => {
   return (
     <div>
       <NavBar />
-      <Outlet />
-      <Footer />
+      <Container>
+        <Outlet />
+        <Footer />
+      </Container>
     </div>
   );
 };
