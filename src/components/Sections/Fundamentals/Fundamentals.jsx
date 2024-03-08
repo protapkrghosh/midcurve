@@ -27,10 +27,10 @@ const Fundamentals = () => {
 
 
             <div className='w-[100%] h-[418px] bg-[#E1E2F6] rounded-md flex mb-[278px]'>
-                <div className='bg-no-repeat ml-[120px]' style={{ backgroundImage: `url(${fundaIcon2})` }}>
+                <div className='bg-no-repeat bg-right' style={{ backgroundImage: `url(${fundaIcon2})` }}>
 
-                    <div className='flex items-center mt-[-95px]'>
-                        <p className='w-[634px] text-[26px] ml-[-40px] mr-[100px] mt-16'>Self-aware meme coin catering to the untapped potential of the mid-curve market. Bullish!</p>
+                    <div className='flex flex-row-reverse items-center mt-[-115px]'>
+                        <p className='w-[634px] text-[26px] ml-[-10px] mr-[100px] mt-16 text-end'>Self-aware meme coin catering to the untapped potential of the mid-curve market. Bullish!</p>
                         <img src={funda2} alt="funda1" />
                     </div>
                 </div>
