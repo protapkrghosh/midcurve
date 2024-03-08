@@ -27,11 +27,11 @@ const Fundamentals = () => {
 
 
             <div className='w-[100%] h-[418px] bg-[pink] rounded-md flex mb-[278px]'>
-                <div className='bg-no-repeat ml-[120px]' style={{ backgroundImage: `url(${fundaIcon1})` }}>
+                <div className='bg-no-repeat ml-[120px]' style={{ backgroundImage: `url(${fundaIcon2})` }}>
 
                     <div className='flex items-center mt-[-95px]'>
                         <p className='w-[634px] text-[26px] ml-[-40px] mr-[100px] mt-16'>Self-aware meme coin catering to the untapped potential of the mid-curve market. Bullish!</p>
-                        <img src={funda1} alt="funda1" />
+                        <img src={funda2} alt="funda1" />
                     </div>
                 </div>
             </div>
@@ -40,8 +40,8 @@ const Fundamentals = () => {
             <div className='w-[100%] h-[418px] bg-[pink] rounded-md flex mb-[213px]'>
                 <div className='bg-no-repeat ml-[120px]' style={{ backgroundImage: `url(${fundaIcon3})` }}>
 
-                    <div className='flex items-center mt-[-95px]'>
-                        <p className='w-[634px] text-[26px] ml-[-40px] mr-[100px] mt-16'>Self-aware meme coin catering to the untapped potential of the mid-curve market. Bullish!</p>
+                    <div className='flex items-center mt-[-180px] mr-[-120px]'>
+                        <p className='w-[634px] text-[26px] ml-[-40px] mr-[100px] mt-28'>A memecoin for the middle crowd. Bullish!</p>
                         <img src={funda3} alt="funda1" />
                     </div>
                 </div>
