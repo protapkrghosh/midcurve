@@ -18,7 +18,7 @@ module.exports = {
       },
       extend: {
          fontFamily: {
-            
+            mochiy: "Mochiy Pop P One",
          },
          colors: {
             border: "hsl(var(--border))",
