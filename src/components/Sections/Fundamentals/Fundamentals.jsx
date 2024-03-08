@@ -15,7 +15,7 @@ const Fundamentals = () => {
             {/* first card */}
 
 
-            <div className='w-[100%] h-[418px] bg-[pink] rounded-md flex mb-[213px]'>
+            <div className='w-[100%] h-[418px] bg-[#F8E2F6] rounded-md flex mb-[213px]'>
                 <div className='bg-no-repeat ml-[120px]' style={{ backgroundImage: `url(${fundaIcon1})` }}>
 
                     <div className='flex items-center mt-[-95px]'>
@@ -26,7 +26,7 @@ const Fundamentals = () => {
             </div>
 
 
-            <div className='w-[100%] h-[418px] bg-[pink] rounded-md flex mb-[278px]'>
+            <div className='w-[100%] h-[418px] bg-[#E1E2F6] rounded-md flex mb-[278px]'>
                 <div className='bg-no-repeat ml-[120px]' style={{ backgroundImage: `url(${fundaIcon2})` }}>
 
                     <div className='flex items-center mt-[-95px]'>
@@ -37,7 +37,7 @@ const Fundamentals = () => {
             </div>
 
 
-            <div className='w-[100%] h-[418px] bg-[pink] rounded-md flex mb-[213px]'>
+            <div className='w-[100%] h-[418px] bg-[#F8EFE2] rounded-md flex mb-[213px]'>
                 <div className='bg-no-repeat ml-[120px]' style={{ backgroundImage: `url(${fundaIcon3})` }}>
 
                     <div className='flex items-center mt-[-180px] mr-[-120px]'>
