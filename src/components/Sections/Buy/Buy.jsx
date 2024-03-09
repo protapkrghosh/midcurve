@@ -1,17 +1,17 @@
 import React from 'react';
 import buyImg from "@/assets/how to buy 1.png"
-import dashedImg from "@/assets/dashed.png"
 
 const Buy = () => {
   return (
-    <div className='mb-[150px] md:flex justify-end items-center gap-x-5' id='buy'>
+    <div className='mb-[150px] flex flex-col-reverse md:flex-row justify-end items-center gap-x-5' id='buy'>
 
       <div className='md:w-[52%] mt-14 md:mt-0'>
         <p className='text-[45px] xl:text-[50px] 2xl:text-[60px] mb-[30px]'>How to Buy</p>
 
         <div>
           <div className='flex items-start relative'>
-            <img src={dashedImg} alt="Image" className='h-[48px] absolute left-[22px] top-[46px]' />
+            {/* Dashed border */}
+            <div className='w-[67px] md:w-[89px] lg:w-[70px] xl:w-[43px] h-[1px] border-dashed border-t-[1px] rotate-90 border-[#36AE36] absolute left-[-10px] md:left-[-20px] lg:left-[-11px] xl:left-[3px] top-[83px] md:top-[95px] lg:top-[80px] xl:top-[68px]'/>
 
             {/* Circle */}
             <div className='w-12 h-12 border-[1px] border-dashed border-[#36AE36] rounded-full flex justify-center items-center mr-5'>
@@ -22,7 +22,8 @@ const Buy = () => {
           </div>
 
           <div className='flex items-start relative'>
-            <img src={dashedImg} alt="Image" className='h-[48px] absolute left-[22px] top-[46px]' />
+            {/* Dashed border */}
+            <div className='w-[89px] md:w-[113px] lg:w-[70px] xl:w-[43px] h-[1px] border-dashed border-t-[1px] rotate-90 border-[#36AE36] absolute left-[-20px] md:left-[-31px] lg:left-[-11px] xl:left-[3px] top-[94px] md:top-[106px] lg:top-[80px] xl:top-[68px]' />
 
             {/* Circle */}
             <div className='w-12 h-12 border-[1px] border-dashed border-[#36AE36] rounded-full flex justify-center items-center mr-5'>

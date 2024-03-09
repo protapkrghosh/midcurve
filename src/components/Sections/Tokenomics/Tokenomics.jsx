@@ -13,7 +13,7 @@ import vector4 from "@/assets/tokenomics_icons/vector4.png"
 
 const Tokenomics = () => {
   return (
-    <div className="my-28" id='tokenomics'>
+    <div className="md:my-24 lg:my-28" id='tokenomics'>
       <div className="lg:flex xl:justify-center 2xl:justify-between items-center">
         <div className="xl:w-1/3 2xl:w-2/5">
           <img src={tokenomics} alt="Image" className="w-[80%] md:w-[50%] lg:w-full" />
@@ -100,7 +100,7 @@ const Tokenomics = () => {
                 </div>
 
                 {/* Contact */}
-                <div className="w-full xl:w-[535px] 2xl:w-[640px]">
+                <div className="w-full md:w-[535px] 2xl:w-[640px]">
                   <p className="2xl:text-[18px] mr-10">Contact:</p>
 
                   <div className="flex justify-center items-center text-white text-[10px] md:text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 md:px-6 rounded-[5px] uppercase mt-4">
