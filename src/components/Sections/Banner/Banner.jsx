@@ -13,7 +13,7 @@ const Banner = () => {
     <div>
       <div className="mt-[52px]">
         <img src={bannerImg} alt="Image" className="md:w-[75%] mx-auto" />
-        <h1 className="text-[27px] md:text-[45px] lg:text-[50px] xl:text-[60px] 2xl:text-[70px] text-white text-center bg-[#1592D6] rounded-[10px] py-[10px] w-full md:w-[95%] lg:w-[76%] 2xl:w-[71%] mx-auto mt-12 mb-9 uppercase">Your tribe awaits</h1>
+        <h1 className="text-[27px] md:text-[45px] lg:text-[50px] xl:text-[56px] 2xl:text-[68px] text-white text-center bg-[#1592D6] rounded-[10px] py-[10px] w-full md:w-[95%] lg:w-[68%] 2xl:w-[67%] mx-auto mt-12 mb-9 uppercase">Your tribe awaits</h1>
 
         <div className="flex justify-center">
           <Button className="text-[14px] 2xl:text-[16px] rounded-[5px] group cursor-pointer px-5 md:px-7">Buy $Midcurve</Button>
