@@ -8,7 +8,7 @@ import fundaIcon3 from "@/assets/image4279.png"
 
 const Fundamentals = () => {
   return (
-    <div className='pb-40'>
+    <div className='pb-40' id='fundamentals'>
       <p className='text-[33px] xl:text-[50px] 2xl:text-[60px] text-center mb-28 md:mb-[155px]'>The Fundamentals</p>
 
       {/* First section */}

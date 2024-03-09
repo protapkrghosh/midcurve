@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 
 const Banner = () => {
   return (
-    <div>
+    <div id="home">
       <div className="mt-[52px]">
         <img src={bannerImg} alt="Image" className="md:w-[75%] mx-auto" />
         <h1 className="text-[27px] md:text-[45px] lg:text-[50px] xl:text-[56px] 2xl:text-[68px] text-white text-center bg-[#1592D6] rounded-[10px] py-[10px] w-full md:w-[95%] lg:w-[68%] 2xl:w-[67%] mx-auto mt-12 mb-9 uppercase">Your tribe awaits</h1>
