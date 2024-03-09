@@ -3,7 +3,7 @@ import aboutImg from "@/assets/photo47.png"
 
 const About = () => {
   return (
-    <div className='mt-[142px] mb-[150px] md:flex justify-center items-center container' id='about'>
+    <div className='my-[90px] md:mt-[110px] lg:mt-[142px] md:mb-[110px] lg:mb-[150px] md:flex justify-center items-center container' id='about'>
       <div className='md:w-[50%]'>
         <img src={aboutImg} alt="Image" className='xl:w-[90%] mx-auto md:mx-0' />
       </div>
