@@ -3,7 +3,7 @@ import buyImg from "@/assets/how to buy 1.png"
 
 const Buy = () => {
   return (
-    <div className='mb-[150px] flex flex-col-reverse md:flex-row justify-end items-center gap-x-5' id='buy'>
+    <div className='md:mb-[150px] flex flex-col-reverse md:flex-row justify-end items-center gap-x-5' id='buy'>
 
       <div className='md:w-[52%] mt-14 md:mt-0'>
         <p className='text-[45px] xl:text-[50px] 2xl:text-[60px] mb-[30px]'>How to Buy</p>
