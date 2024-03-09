@@ -10,13 +10,33 @@ import vector1 from "@/assets/tokenomics_icons/vector1.png"
 import vector2 from "@/assets/tokenomics_icons/vector2.png"
 import vector3 from "@/assets/tokenomics_icons/vector3.png"
 import vector4 from "@/assets/tokenomics_icons/vector4.png"
+import { IoCopy } from "react-icons/io5";
+import { MdLibraryAddCheck } from "react-icons/md";
+import { useState } from "react"
+import toast from "react-hot-toast"
 
 const Tokenomics = () => {
+  const [copied, setCopied] = useState(false);
+
+  // Copy the contact ID =============
+  const copyLink = () => {
+    if (!copied) {
+      navigator.clipboard.writeText('0x3FEB4fEA5132695542F8Ede5076Ac43296d17c6d').then(() => {
+        toast.success('Contact ID copied');
+        setCopied(true);
+
+        setTimeout(() => {
+          setCopied(false);
+        }, 2000);
+      });
+    }
+  };
+
   return (
-    <div className="my-28" id='tokenomics'>
+    <div className="my-24 lg:my-28" id='tokenomics'>
       <div className="lg:flex xl:justify-center 2xl:justify-between items-center">
         <div className="xl:w-1/3 2xl:w-2/5">
-          <img src={tokenomics} alt="Image" className="w-[80%] md:w-[50%] lg:w-full" />
+          <img src={tokenomics} alt="Image" className="w-[72%] md:w-[50%] lg:w-full" />
         </div>
 
         <div className="bg-[#EFF7E2] rounded-[10px] mt-14 lg:mt-0">
@@ -29,7 +49,7 @@ const Tokenomics = () => {
                 <div className="flex items-center">
                   <p className="2xl:text-[18px] mr-5 lg:mr-10">Total Supply:</p>
 
-                  <p className="flex justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 px-3 lg:px-6 rounded-[5px]">
+                  <p className="flex justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 px-6 rounded-[5px]">
                     <img src={icon6} alt="Icon" className="mr-2 w-[19px]" />
                     <span>10,000,000,000</span>
                   </p>
@@ -37,20 +57,20 @@ const Tokenomics = () => {
 
                 {/* Token supply */}
                 <div className="flex items-center my-7">
-                  <p className="2xl:text-[18px]  mr-5 lg:mr-10">Token Supply</p>
+                  <p className="2xl:text-[18px] mr-5 lg:mr-10">Token Supply</p>
 
                   <div className="flex gap-x-5">
-                    <p className="flex flex-col lg:flex-row justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-[9px] px-3 lg:px-6 rounded-[5px]">
+                    <p className="flex flex-col lg:flex-row justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-[9px] px-2 md:px-3 lg:px-6 rounded-[5px]">
                       <img src={icon6} alt="Icon" className="mr-2 w-[19px] mb-1 lg:mb-0" />
                       <span>Immutable</span>
                     </p>
 
-                    <p className="flex flex-col lg:flex-row justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-[9px] px-3 lg:px-6 rounded-[5px]">
+                    <p className="flex flex-col lg:flex-row justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-[9px] px-2 md:px-3 lg:px-6 rounded-[5px]">
                       <img src={icon1} alt="Icon" className="mr-2 w-[16px] mb-1 lg:mb-0" />
                       <span>LP Burned</span>
                     </p>
 
-                    <p className="flex flex-col lg:flex-row justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-[9px] px-3 lg:px-6 rounded-[5px]">
+                    <p className="flex flex-col lg:flex-row justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-[9px] px-2 md:px-3 lg:px-6 rounded-[5px]">
                       <img src={icon5} alt="Icon" className="mr-2 w-[25px] mb-1 lg:mb-0" />
                       <span>No Taxes</span>
                     </p>
@@ -59,7 +79,7 @@ const Tokenomics = () => {
 
                 {/* Animals */}
                 <div className="flex items-center mb-7">
-                  <p className="2xl:text-[18px] mr-10">Animals</p>
+                  <p className="2xl:text-[18px] mr-5 lg:mr-10">Animals</p>
 
                   <div className="flex gap-x-5">
                     <p className="flex justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 px-6 rounded-[5px]">
@@ -81,7 +101,7 @@ const Tokenomics = () => {
 
                 {/* Fundamentals */}
                 <div className="flex items-center">
-                  <p className="2xl:text-[18px] mr-10">Fundamentals</p>
+                  <p className="2xl:text-[18px] mr-5 lg:mr-10">Fundamentals</p>
 
                   <p className="flex justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 px-6 rounded-[5px] uppercase">
                     <img src={vector3} alt="Icon" className="mr-2 w-[13px]" />
@@ -91,7 +111,7 @@ const Tokenomics = () => {
 
                 {/* Blockchain */}
                 <div className="flex items-center my-7">
-                  <p className="2xl:text-[18px] mr-10">Blockchain</p>
+                  <p className="2xl:text-[18px] mr-5 lg:mr-10">Blockchain</p>
 
                   <p className="flex justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 px-6 rounded-[5px] uppercase">
                     <img src={icon3} alt="Icon" className="mr-2 w-[18px]" />
@@ -100,18 +120,23 @@ const Tokenomics = () => {
                 </div>
 
                 {/* Contact */}
-                <div className="xl:w-[535px] 2xl:w-[640px]">
+                <div className="w-full md:w-[520px] 2xl:w-[640px]">
                   <p className="2xl:text-[18px] mr-10">Contact:</p>
 
-                  <div className="flex justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 px-6 rounded-[5px] uppercase mt-4">
-                    <p>0x3FEB4fEA5132695542F8Ede5076Ac43296d17c6d</p>
-                    <img src={icon4} alt="Icon" className="ml-10 w-[18px] cursor-pointer" />
+                  <div className="flex justify-center items-center text-white text-[10px] md:text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 md:px-6 rounded-[5px] uppercase mt-4">
+                    <p className="mr-5 ml-5 md:ml-0">0x3FEB4fEA5132695542F8Ede5076Ac43296d17c6d</p>
+                    <button onClick={() => { setCopied(!copied); copyLink() }}>
+                      {
+                        copied ? <MdLibraryAddCheck className="text-[20px] cursor-pointer hidden md:block" /> :
+                          <IoCopy className="text-[20px] cursor-pointer hidden md:block" />
+                      }
+                    </button>
                   </div>
                 </div>
 
                 {/* Ticker */}
                 <div className="flex items-center my-7">
-                  <p className="2xl:text-[18px] mr-10">Ticker:</p>
+                  <p className="2xl:text-[18px] mr-5 lg:mr-10">Ticker:</p>
 
                   <p className="flex justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 px-6 rounded-[5px] uppercase">
                     <span>$ Midcurve</span>
