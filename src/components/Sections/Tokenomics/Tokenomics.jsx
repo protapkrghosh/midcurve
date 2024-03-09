@@ -10,8 +10,23 @@ import vector1 from "@/assets/tokenomics_icons/vector1.png"
 import vector2 from "@/assets/tokenomics_icons/vector2.png"
 import vector3 from "@/assets/tokenomics_icons/vector3.png"
 import vector4 from "@/assets/tokenomics_icons/vector4.png"
+import { IoCopy } from "react-icons/io5";
+import { MdLibraryAddCheck } from "react-icons/md";
+import { useState } from "react"
+import toast from "react-hot-toast"
 
 const Tokenomics = () => {
+  const [copied, setCopied] = useState(false);
+
+  // Copy the contact ID =============
+  const copyLink = () => {
+    if (copied === false) {
+      navigator.clipboard.writeText('0X3FEB4FEA5132695542F8EDE5076AC43296D17C6D').then(() => {
+        toast.success('Contact ID coped');
+      });
+    }
+  };
+
   return (
     <div className="my-24 lg:my-28" id='tokenomics'>
       <div className="lg:flex xl:justify-center 2xl:justify-between items-center">
@@ -104,8 +119,13 @@ const Tokenomics = () => {
                   <p className="2xl:text-[18px] mr-10">Contact:</p>
 
                   <div className="flex justify-center items-center text-white text-[10px] md:text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 md:px-6 rounded-[5px] uppercase mt-4">
-                    <p>0x3FEB4fEA5132695542F8Ede5076Ac43296d17c6d</p>
-                    <img src={icon4} alt="Icon" className="md:ml-10 w-[18px] cursor-pointer hidden md:block" />
+                    <p className="mr-5">0x3FEB4fEA5132695542F8Ede5076Ac43296d17c6d</p>
+                    <button onClick={() => { setCopied(!copied); copyLink() }}>
+                      {
+                        copied ? <MdLibraryAddCheck className="text-[20px] cursor-pointer hidden md:block" /> :
+                          <IoCopy className="text-[20px] cursor-pointer hidden md:block" />
+                      }
+                    </button>
                   </div>
                 </div>
 
