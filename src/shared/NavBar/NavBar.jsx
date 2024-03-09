@@ -40,15 +40,19 @@ const NavBar = () => {
               <li>
                 <Link to="about" smooth={true} offset={-130} duration={700} className="text-[#36AE36] font-amulya font-normal md:ml-5 xl:ml-8 2xl:ml-10 my-4 md:my-0 cursor-pointer">About</Link>
               </li>
+
               <li>
                 <Link to="fundamentals" smooth={true} offset={-130} duration={700} className="text-[#181818] hover:text-[#36AE36] font-amulya font-normal md:ml-5 xl:ml-8 2xl:ml-10 my-4 md:my-0 cursor-pointer duration-200">Fundamentals</Link>
               </li>
+
               <li>
                 <Link to="tokenomics" smooth={true} offset={-130} duration={700} className="text-[#181818] hover:text-[#36AE36] font-amulya font-normal md:ml-5 xl:ml-8 2xl:ml-10 my-4 md:my-0 cursor-pointer duration-200">Tokenomics</Link>
               </li>
+
               <li>
                 <Link to="buy" smooth={true} offset={-130} duration={700} className="text-[#181818] hover:text-[#36AE36] font-amulya font-normal md:ml-5 xl:ml-8 2xl:ml-10 my-4 md:my-0 cursor-pointer">How to Buy</Link>
               </li>
+              
               <li>
                 <Link to="connect" smooth={true} offset={-130} duration={700} className="text-[#181818] hover:text-[#36AE36] font-amulya font-normal md:mx-5 xl:mx-8 2xl:ml-10 my-4 md:my-0 cursor-pointer duration-200">Connect</Link>
               </li>
