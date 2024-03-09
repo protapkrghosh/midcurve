@@ -124,7 +124,7 @@ const Tokenomics = () => {
                   <p className="2xl:text-[18px] mr-10">Contact:</p>
 
                   <div className="flex justify-center items-center text-white text-[10px] md:text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 md:px-6 rounded-[5px] uppercase mt-4">
-                    <p className="mr-5">0x3FEB4fEA5132695542F8Ede5076Ac43296d17c6d</p>
+                    <p className="mr-5 ml-5 md:ml-0">0x3FEB4fEA5132695542F8Ede5076Ac43296d17c6d</p>
                     <button onClick={() => { setCopied(!copied); copyLink() }}>
                       {
                         copied ? <MdLibraryAddCheck className="text-[20px] cursor-pointer hidden md:block" /> :
