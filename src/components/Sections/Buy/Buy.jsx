@@ -1,5 +1,6 @@
 import React from 'react';
 import buyImg from "@/assets/how to buy 1.png"
+import dashedImg from "@/assets/dashed.png"
 
 const Buy = () => {
   return (
@@ -9,7 +10,9 @@ const Buy = () => {
         <p className='text-[45px] xl:text-[50px] 2xl:text-[60px] mb-[30px]'>How to Buy</p>
 
         <div>
-          <div className='flex items-start'>
+          <div className='flex items-start relative'>
+            <img src={dashedImg} alt="Image" className='h-[48px] absolute left-[22px] top-[46px]' />
+
             {/* Circle */}
             <div className='w-12 h-12 border-[1px] border-dashed border-[#36AE36] rounded-full flex justify-center items-center mr-5'>
               <p className='w-9 h-9 text-white text-[15px] bg-[#36AE36] rounded-full m-1 flex justify-center items-center'>1</p>
@@ -18,7 +21,9 @@ const Buy = () => {
             <p className='text-[14px] 2xl:text-[16px] leading-6 mb-[20px] xl:w-[85%] 2xl:w-[79%]'>Set up a crypto wallet on the Base network using Coinbase Wallet. If you're using a different wallet like MetaMask, follow these steps to connect to Base.</p>
           </div>
 
-          <div className='flex items-start'>
+          <div className='flex items-start relative'>
+            <img src={dashedImg} alt="Image" className='h-[48px] absolute left-[22px] top-[46px]' />
+
             {/* Circle */}
             <div className='w-12 h-12 border-[1px] border-dashed border-[#36AE36] rounded-full flex justify-center items-center mr-5'>
               <p className='w-9 h-9 text-white text-[15px] bg-[#36AE36] rounded-full m-1 flex justify-center items-center'>2</p>
