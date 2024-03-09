@@ -29,7 +29,7 @@ const Tokenomics = () => {
                 <div className="flex items-center">
                   <p className="2xl:text-[18px] mr-5 lg:mr-10">Total Supply:</p>
 
-                  <p className="flex justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 px-3 lg:px-6 rounded-[5px]">
+                  <p className="flex justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 px-6 rounded-[5px]">
                     <img src={icon6} alt="Icon" className="mr-2 w-[19px]" />
                     <span>10,000,000,000</span>
                   </p>
@@ -37,20 +37,20 @@ const Tokenomics = () => {
 
                 {/* Token supply */}
                 <div className="flex items-center my-7">
-                  <p className="2xl:text-[18px]  mr-5 lg:mr-10">Token Supply</p>
+                  <p className="2xl:text-[18px] mr-5 lg:mr-10">Token Supply</p>
 
                   <div className="flex gap-x-5">
-                    <p className="flex flex-col lg:flex-row justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-[9px] px-3 lg:px-6 rounded-[5px]">
+                    <p className="flex flex-col lg:flex-row justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-[9px] px-2 md:px-3 lg:px-6 rounded-[5px]">
                       <img src={icon6} alt="Icon" className="mr-2 w-[19px] mb-1 lg:mb-0" />
                       <span>Immutable</span>
                     </p>
 
-                    <p className="flex flex-col lg:flex-row justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-[9px] px-3 lg:px-6 rounded-[5px]">
+                    <p className="flex flex-col lg:flex-row justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-[9px] px-2 md:px-3 lg:px-6 rounded-[5px]">
                       <img src={icon1} alt="Icon" className="mr-2 w-[16px] mb-1 lg:mb-0" />
                       <span>LP Burned</span>
                     </p>
 
-                    <p className="flex flex-col lg:flex-row justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-[9px] px-3 lg:px-6 rounded-[5px]">
+                    <p className="flex flex-col lg:flex-row justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-[9px] px-2 md:px-3 lg:px-6 rounded-[5px]">
                       <img src={icon5} alt="Icon" className="mr-2 w-[25px] mb-1 lg:mb-0" />
                       <span>No Taxes</span>
                     </p>
@@ -59,7 +59,7 @@ const Tokenomics = () => {
 
                 {/* Animals */}
                 <div className="flex items-center mb-7">
-                  <p className="2xl:text-[18px] mr-10">Animals</p>
+                  <p className="2xl:text-[18px] mr-5 lg:mr-10">Animals</p>
 
                   <div className="flex gap-x-5">
                     <p className="flex justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 px-6 rounded-[5px]">
@@ -81,7 +81,7 @@ const Tokenomics = () => {
 
                 {/* Fundamentals */}
                 <div className="flex items-center">
-                  <p className="2xl:text-[18px] mr-10">Fundamentals</p>
+                  <p className="2xl:text-[18px] mr-5 lg:mr-10">Fundamentals</p>
 
                   <p className="flex justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 px-6 rounded-[5px] uppercase">
                     <img src={vector3} alt="Icon" className="mr-2 w-[13px]" />
@@ -91,7 +91,7 @@ const Tokenomics = () => {
 
                 {/* Blockchain */}
                 <div className="flex items-center my-7">
-                  <p className="2xl:text-[18px] mr-10">Blockchain</p>
+                  <p className="2xl:text-[18px] mr-5 lg:mr-10">Blockchain</p>
 
                   <p className="flex justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 px-6 rounded-[5px] uppercase">
                     <img src={icon3} alt="Icon" className="mr-2 w-[18px]" />
@@ -100,18 +100,18 @@ const Tokenomics = () => {
                 </div>
 
                 {/* Contact */}
-                <div className="xl:w-[535px] 2xl:w-[640px]">
+                <div className="w-full xl:w-[535px] 2xl:w-[640px]">
                   <p className="2xl:text-[18px] mr-10">Contact:</p>
 
-                  <div className="flex justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 px-6 rounded-[5px] uppercase mt-4">
+                  <div className="flex justify-center items-center text-white text-[10px] md:text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 md:px-6 rounded-[5px] uppercase mt-4">
                     <p>0x3FEB4fEA5132695542F8Ede5076Ac43296d17c6d</p>
-                    <img src={icon4} alt="Icon" className="ml-10 w-[18px] cursor-pointer" />
+                    <img src={icon4} alt="Icon" className="md:ml-10 w-[18px] cursor-pointer hidden md:block" />
                   </div>
                 </div>
 
                 {/* Ticker */}
                 <div className="flex items-center my-7">
-                  <p className="2xl:text-[18px] mr-10">Ticker:</p>
+                  <p className="2xl:text-[18px] mr-5 lg:mr-10">Ticker:</p>
 
                   <p className="flex justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 px-6 rounded-[5px] uppercase">
                     <span>$ Midcurve</span>
