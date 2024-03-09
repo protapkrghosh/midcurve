@@ -20,9 +20,14 @@ const Tokenomics = () => {
 
   // Copy the contact ID =============
   const copyLink = () => {
-    if (copied === false) {
-      navigator.clipboard.writeText('0X3FEB4FEA5132695542F8EDE5076AC43296D17C6D').then(() => {
-        toast.success('Contact ID coped');
+    if (!copied) {
+      navigator.clipboard.writeText('0x3FEB4fEA5132695542F8Ede5076Ac43296d17c6d').then(() => {
+        toast.success('Contact ID copied');
+        setCopied(true);
+
+        setTimeout(() => {
+          setCopied(false);
+        }, 2000);
       });
     }
   };
@@ -115,7 +120,7 @@ const Tokenomics = () => {
                 </div>
 
                 {/* Contact */}
-                <div className="w-full md:w-[535px] 2xl:w-[640px]">
+                <div className="w-full md:w-[520px] 2xl:w-[640px]">
                   <p className="2xl:text-[18px] mr-10">Contact:</p>
 
                   <div className="flex justify-center items-center text-white text-[10px] md:text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 md:px-6 rounded-[5px] uppercase mt-4">
