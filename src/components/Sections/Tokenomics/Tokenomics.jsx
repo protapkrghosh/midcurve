@@ -41,7 +41,7 @@ const Tokenomics = () => {
 
         <div className="bg-[#EFF7E2] rounded-[10px] mt-14 lg:mt-0">
           <div style={{ backgroundImage: `url(${bgImage})` }} className="bg-no-repeat bg-left-top">
-            <div className="px-5 lg:px-10 py-4">
+            <div className="px-3 md:px-5 lg:px-10 py-4">
               <h1 className='text-[45px] xl:text-[50px] 2xl:text-[60px] mb-[60px]'>Tokenomics</h1>
 
               <div>
@@ -57,7 +57,9 @@ const Tokenomics = () => {
 
                 {/* Token supply */}
                 <div className="flex items-center my-7">
-                  <p className="2xl:text-[18px] mr-5 lg:mr-10">Token Supply</p>
+                  <p className="2xl:text-[18px] mr-5 lg:mr-10 hidden md:block">Token Supply</p>
+
+                  <p className="2xl:text-[18px] mr-5 lg:mr-10 md:hidden block">Token <br /> Supply</p>
 
                   <div className="flex gap-x-5">
                     <p className="flex flex-col lg:flex-row justify-center items-center text-white text-[13px] 2xl:text-[16px] bg-[#36AE36] py-[9px] px-2 md:px-3 lg:px-6 rounded-[5px]">
@@ -124,11 +126,11 @@ const Tokenomics = () => {
                   <p className="2xl:text-[18px] mr-10">Contact:</p>
 
                   <div className="flex justify-center items-center text-white text-[10px] md:text-[13px] 2xl:text-[16px] bg-[#36AE36] py-3 md:px-6 rounded-[5px] uppercase mt-4">
-                    <p className="mr-5 ml-5 md:ml-0">0x3FEB4fEA5132695542F8Ede5076Ac43296d17c6d</p>
+                    <p className="mr-2 md:mr-5">0x3FEB4fEA5132695542F8Ede5076Ac43296d17c6d</p>
                     <button onClick={() => { setCopied(!copied); copyLink() }}>
                       {
-                        copied ? <MdLibraryAddCheck className="text-[20px] cursor-pointer hidden md:block" /> :
-                          <IoCopy className="text-[20px] cursor-pointer hidden md:block" />
+                        copied ? <MdLibraryAddCheck className="text-[15px] md:text-[20px] cursor-pointer" /> :
+                          <IoCopy className="text-[15px] md:text-[20px] cursor-pointer" />
                       }
                     </button>
                   </div>
